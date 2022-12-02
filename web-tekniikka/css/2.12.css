@@ -36,3 +36,12 @@ ul + p{
 a[target="_blank"]{
     color: brown;
 }
+.col{
+    border: 1px dashed darkred;
+}
+td{
+    border: 1px solid black;
+}
+tr:nth-child(odd){
+    background-color: blueviolet;
+}
