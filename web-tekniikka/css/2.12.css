@@ -28,3 +28,11 @@ a:hover{
     font-weight: bold;
     color: blue;
 }
+
+/* + viittaa heti seuraavaan sisarelementtiin */
+ul + p{
+    color: rgb(140, 7, 120);
+}
+a[target="_blank"]{
+    color: brown;
+}
