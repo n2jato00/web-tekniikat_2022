@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Moodle Login</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        @font-face { 
+        font-family: 'MessinaSans';
+        src: url("/ou/MessinaSansWeb-Regular.woff2") format('woff2'),
+            url("/ou/MessinaSansWeb-Regular.woff") format('woff');
+        font-weight: normal;
+        font-style: normal;
+        }
+        @font-face { 
+        font-family: 'MessinaSans';
+        src: url("/ou/MessinaSansWeb-Bold.woff2") format('woff2'),
+            url("/ou/MessinaSansWeb-Bold.woff") format('woff');
+        font-weight: 700;
+        font-style: normal;
+        }
+
+        body {
+            font-family: "MessinaSans","Encode sans","Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+                "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        }
+
+        a {
+            color: #193b8f;
+            text-decoration: none;
+        }
+
+        h1,
+        label {
+            color: #193b8f;
+            font-size: 1.2rem;
+        }
+
+        label {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        div {
+            margin: 10px auto;
+        }
+
+        .error {
+            color: #a94442;
+            background-color: #f2dede;
+            border: solid 1px #ebccd1;
+            padding: 2em;
+        }
+
+        h1,
+        p,
+        input,
+        button {
+            width: 70%;
+            max-width: 500px;
+            margin: 0px auto;
+            padding: 5px;
+            display: block;
+            text-align: center;
+        }
+
+        h1~h1 {
+            padding-top: 0px;
+            margin-bottom: 20px;
+        }
+
+        img {
+            object-fit: cover;
+        }
+
+        input,
+        button {
+            max-width: 200px;
+            margin: 10px auto;
+        }
+
+        #oamklogo {
+            height: 60px;
+            object-fit: cover;
+        }
+
+        .hakalogo {
+            border: 1px solid gray;
+        }
+
+        .yo-logo {
+            max-width: 500px;
+            width: 100%;
+        }
+
+        body {
+            padding: 20px 0;
+        }
+
+        hr {
+            margin: 20px auto;
+            width: 70%;
+            max-width: 300px;
+        }
+
+        #oamkhaka {
+            display: none;
+        }
+
+        :checked+#oamkhaka {
+            display: block;
+        }
+
+        #haka {
+            display: none;
+        }
+
+        :checked+#haka {
+            display: block;
+        }
+
+        #b2c {
+            display: none;
+        }
+
+        :checked+#b2c {
+            display: block;
+        }
+
+        #local {
+            display: none;
+        }
+
+        :checked+#local {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div>
+        <a href="/Shibboleth.sso/Login?entityID=https://login.oulu.fi/idp/shibboleth&target=https://moodle.oulu.fi/auth/shibboleth/index.php">
+            <p><img src="/ou/oulun_logo_pieni.png" width="200" height="262" alt="University login" /></p>
+            <h1>Kirjaudu Oulun yliopiston käyttäjänä</h1>
+            <h1>Log in using University of Oulu account</h1>
+        </a>
+    </div>
+    <hr />
+
+    <div>
+        <h1>
+            <a href="https://www.oamk.fi/moodle">Kirjaudu Oulun ammattikorkeakoulun käyttäjänä</a>
+        </h1>
+        <h1>
+            <a href="https://www.oamk.fi/moodle">Log in using Oamk account</a>
+        </h1>
+    </div>
+    <hr />
+
+    <div>
+        <p><label for="hakabox">Kirjaudu Haka-tunnuksella <br /> Log in using Haka account </label></p>
+        <input type="checkbox" id="hakabox" style="display:none;">
+        <div id="haka">
+            <p><a href="/auth/shibboleth/index.php">
+                    <img class="hakalogo" src="/ou/Haka_login_pysty.svg" width="200" height="169" />
+                </a></p>
+        </div>
+        </p>
+    </div>
+    <hr />
+
+<!-- 
+    <div>
+        <p><label for="b2cbox">Kirjaudu Azure AD B2C-tunnuksella <br /> Log in using Azure AD B2C</label></p>
+        <input type="checkbox" id="b2cbox" style="display:none;">
+        <div id="b2c">
+            <p><a href="/auth/azureb2c/">
+                    <img class="hakalogo" src="/ou/Haka_login_pysty.svg" width="20" height="17" />
+                </a></p>
+        </div>
+        </p>
+    </div>
+    <hr />
+ -->
+
+    <p><label for="checkbox">Kirjaudu Moodle-tunnuksella <br /> Log in using Moodle account </label></p>
+    <input type="checkbox" id="checkbox" style="display:none;">
+    <div id="local">
+        <form action="/login/index.php" method="post" name="form" id="form">
+            <input type="text" name="username" id="username" placeholder="Tunnus/Username" />
+            <input type="password" name="password" id="pwd" placeholder="Salasana/Password" />
+            <button type="submit" value="Login">
+                Kirjaudu/Login
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
