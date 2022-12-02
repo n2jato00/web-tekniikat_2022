@@ -1,4 +1,4 @@
-# Tommin repositio web-tekniikkaa varten
+# Tommi's repository for web-tekniikka
 EDITS:<br>
-1.12.2022 map- ja filter-funktiot käyty läpi. Uusi repositio vanhan mennessä jumiin. <br>
-2.12.2022 Advanced CSS-tunti. Kokeiltu wiki sivun tekemistä <br>
+1.12.2022 map- and filter funktions. new repository to replace the old one. <br>
+2.12.2022 Advanced CSS. <br>
