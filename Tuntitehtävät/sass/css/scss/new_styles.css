@@ -4,12 +4,12 @@
 }
 
 body {
-  background-color: #efefef;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #746969;
+  font-family: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif";
 }
 
 h1 {
-  color: pink;
+  color: #b21831;
 }
 
 main {
@@ -21,26 +21,23 @@ footer {
   border-top: 1px solid pink;
   padding-top: 1rem;
 }
-
 footer span {
   text-align: center;
   width: 100%;
   display: block;
-  color: pink;
+  color: #b21831;
 }
 
 .left {
   float: left;
   width: 20%;
 }
-
 .left ul {
   list-style: none; /* Remove default bullets */
 }
-
 .left ul li::before {
   content: "•";
-  color: pink;
+  color: #b21831;
   font-weight: bold;
   display: inline-block;
   width: 1em;
@@ -56,4 +53,4 @@ footer span {
   border-left-color: #000;
 }
 
-/*# sourceMappingURL=new.css.map */
+/*# sourceMappingURL=new_styles.css.map */

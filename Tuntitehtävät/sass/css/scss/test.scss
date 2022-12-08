@@ -1,13 +1,16 @@
+$background-color: #746969;
+$highligh-color: #b21831;
+$font-stack: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif";
 
 * {
     box-sizing: border-box;
 }
 body {
-    background-color: #efefef;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: $background-color;
+    font-family: $font-stack;
 }
 h1 {
-    color: pink;
+    color: $highligh-color;
 }
 main {  
     border-top: 1px solid pink;
@@ -16,29 +19,30 @@ footer {
     clear: both;
     border-top: 1px solid pink;
     padding-top: 1rem;
+    span {
+        text-align: center;
+        width: 100%;
+        display: block;
+        color: $highligh-color;
+    }
 }
-footer span {
-    text-align: center;
-    width: 100%;
-    display: block;
-    color: pink;
-}
+
 .left {
     float: left;
     width: 20%;
+    ul {
+        list-style: none; /* Remove default bullets */
+        li::before {
+            content: "\2022";
+            color: $highligh-color;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+      }
 }
-.left ul {
-    list-style: none; /* Remove default bullets */
-  }
-  
-.left ul li::before {
-    content: "\2022";
-    color: pink;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-}
+
 .right {
     float: left;
     width: 80%;
