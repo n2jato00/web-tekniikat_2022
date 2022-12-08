@@ -2,6 +2,17 @@ $background-color: #746969;
 $highligh-color: #b21831;
 $font-stack: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif";
 
+@mixin theme($theme: blue) {
+    .left ul li::before {
+        color: $theme
+    }
+    border-color: $theme;
+    h1 {
+        color: $theme;
+    }
+}
+
+
 * {
     box-sizing: border-box;
 }
@@ -9,11 +20,13 @@ body {
     background-color: $background-color;
     font-family: $font-stack;
 }
-h1 {
-    color: $highligh-color;
+header{
+    @include theme();
 }
+
 main {  
     border-top: 1px solid pink;
+    @include theme();
 }
 footer {
     clear: both;
@@ -25,6 +38,7 @@ footer {
         display: block;
         color: $highligh-color;
     }
+    @include theme();
 }
 
 .left {

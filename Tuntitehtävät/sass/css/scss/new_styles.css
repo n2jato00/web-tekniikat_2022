@@ -8,24 +8,44 @@ body {
   font-family: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif";
 }
 
-h1 {
-  color: #b21831;
+header {
+  border-color: blue;
+}
+header .left ul li::before {
+  color: blue;
+}
+header h1 {
+  color: blue;
 }
 
 main {
   border-top: 1px solid pink;
+  border-color: blue;
+}
+main .left ul li::before {
+  color: blue;
+}
+main h1 {
+  color: blue;
 }
 
 footer {
   clear: both;
   border-top: 1px solid pink;
   padding-top: 1rem;
+  border-color: blue;
 }
 footer span {
   text-align: center;
   width: 100%;
   display: block;
   color: #b21831;
+}
+footer .left ul li::before {
+  color: blue;
+}
+footer h1 {
+  color: blue;
 }
 
 .left {
