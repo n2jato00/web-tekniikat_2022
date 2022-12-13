@@ -15,20 +15,6 @@ function no_animation() {
 link1.addEventListener('mouseenter', animation);
 link1.addEventListener('mouseleave', no_animation);
 
- //------//
-let link2 = document.getElementById('link2')
-let otter = document.getElementById('otter');
-
-function animation2() {
-    otter.classList.add('fa-bounce');
-}
-
-function no_animation2() {
-    otter.classList.remove('fa-bounce');
-}
-
-link2.addEventListener('mouseenter', animation2);
-link2.addEventListener('mouseleave', no_animation2);
 
 //-----//
 
@@ -46,53 +32,6 @@ function no_animation3() {
 link3.addEventListener('mouseenter', animation3);
 link3.addEventListener('mouseleave', no_animation3);
 
-//-----//
-
-let link4 = document.getElementById('link4')
-let crow = document.getElementById('crow');
-
-function animation4() {
-    crow.classList.add('fa-bounce');
-}
-
-function no_animation4() {
-    crow.classList.remove('fa-bounce');
-}
-
-link4.addEventListener('mouseenter', animation4);
-link4.addEventListener('mouseleave', no_animation4);
-
-//-----//
-
-let link5 = document.getElementById('link5')
-let frog = document.getElementById('frog');
-
-function animation5() {
-    frog.classList.add('fa-bounce');
-}
-
-function no_animation5() {
-    frog.classList.remove('fa-bounce');
-}
-
-link5.addEventListener('mouseenter', animation5);
-link5.addEventListener('mouseleave', no_animation5);
-
-//-----//
-
-let link6 = document.getElementById('link6')
-let dog = document.getElementById('dog');
-
-function animation6() {
-    dog.classList.add('fa-bounce');
-}
-
-function no_animation6() {
-    dog.classList.remove('fa-bounce');
-}
-
-link6.addEventListener('mouseenter', animation6);
-link6.addEventListener('mouseleave', no_animation6);
 
 //-----//
 
