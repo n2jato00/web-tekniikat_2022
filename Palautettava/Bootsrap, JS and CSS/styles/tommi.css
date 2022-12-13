@@ -13,27 +13,30 @@ body {
     }
 .container-fluid {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+
 }  
+.nav-item {
+    padding:5px;
+}
 
 #navbar a:hover {
     color: #056888;
 }
+
 .carousel .carousel-item {
     height: 120px;
-    
-  }
+}
   
-  .carousel-item img {
-      position: absolute;
-      object-fit: cover;
-      top: 0;
-      left: 0;
-      min-height: 120px;
-  }
-  .carousel-caption{
-    
+.carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 120px;
+}
+
+.carousel-caption{
     color: black;
     background-color: white;
     position: absolute;
@@ -62,9 +65,7 @@ p, a, footer{
     font-size: 1.1em;
 }
 
-.nav-item {
-    padding:5px;
-}
+
 
 #footer {
     display: flex;
