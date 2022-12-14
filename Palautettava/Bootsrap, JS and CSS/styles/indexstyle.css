@@ -81,11 +81,28 @@ footer img {
   background-color: white;
 }
 
+.accordion-body img {
+  width: 10%;
+}
+
+.accordion {
+  margin: 5px 0px;
+}
+
+.jotain {
+  margin: 5px 0px;
+}
+
 /* first content index */
 .container {
   display: flex;
+  flex-direction: column;
   margin: 10px;
   height: 55%;
+}
+
+.btn {
+  margin-left: 40px;
 }
 
 .col-2 {
@@ -98,7 +115,6 @@ footer img {
 
 .col-10 {
   display: flex;
-  grid-column: 2/3;
   flex-direction: column;
   justify-content: flex-start;
   align-content: center;

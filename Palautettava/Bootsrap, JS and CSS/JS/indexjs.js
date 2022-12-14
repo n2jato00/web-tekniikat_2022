@@ -50,6 +50,16 @@ link7.addEventListener('mouseenter', animation7);
 link7.addEventListener('mouseleave', no_animation7);
 
 
+let button1 = document.querySelector(".btn-primary");
+
+button1.addEventListener("click", changeColor);
+
+function changeColor(){
+    document.querySelector(".navbar").style.backgroundColor = "red"
+
+}
+
+
 
 
 
