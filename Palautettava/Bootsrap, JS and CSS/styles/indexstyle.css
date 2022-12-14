@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: "Livvic", sans-serif;
   font-size: 1.2em;
-  height: 98vh;
+  height: 100vh;
 }
 
 #navbar {
@@ -82,14 +82,10 @@ footer img {
 }
 
 /* first content index */
-.firstPage {
-  display: grid;
-  grid-template-columns: 2fr 10fr;
-  grid-template-rows: 1fr;
-  width: 100%;
-  border: 5px solid #DA4F00;
-  height: 60%;
-  padding: 10px;
+.container {
+  display: flex;
+  margin: 10px;
+  height: 55%;
 }
 
 .col-2 {
@@ -115,6 +111,11 @@ h3 {
 }
 
 @media screen and (max-width: 991px) {
+  .container {
+    display: flex;
+    margin: 10px;
+    height: 78%;
+  }
   .container-fluid {
     display: flex;
     flex-direction: row;
@@ -132,15 +133,6 @@ h3 {
   .col-10 {
     grid-column: 1/3;
   }
-  .firstPage {
-    display: grid;
-    grid-template-columns: 2fr 10fr;
-    grid-template-rows: 1fr;
-    width: 100%;
-    border: 5px solid #DA4F00;
-    height: 90%;
-    padding: 10px;
-  }
 }
 
-/*# sourceMappingURL=indexstyle1.css.map */
+/*# sourceMappingURL=indexstyle.css.map */
