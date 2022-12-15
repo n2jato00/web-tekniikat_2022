@@ -30,7 +30,8 @@ body {
 }
 .carousel .carousel-item img {
   position: absolute;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   top: 0;
   left: 0;
   min-height: 120px;
@@ -218,6 +219,4 @@ h2 {
   #carouselCaptions {
     display: none;
   }
-}
-
-/*# sourceMappingURL=tommi_sass.css.map */
+}/*# sourceMappingURL=tommi.css.map */
