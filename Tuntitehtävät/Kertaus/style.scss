@@ -1,18 +1,36 @@
 //muuttuja $ merkillä
-$highlight:red;
+$highlight:green;
 
 
 
 @mixin theme($color: blue){
     color: $color;
-    border: 1px solid $highlight;
+    border: 1px solid $color;
     padding: 5px;
     margin: 5px;
+    .highlight{
+        //jos teemanväri sininen
+        @if $color == blue{
+        //Korostetaan keltaisella
+            color: yellow;
+            font-weight: bold;
+            } @else {
+                //korostetaan punaisella
+                color: red;
+                font-weight: bold;
+            }
+        }
 }
 h1{
     @include theme;
 }
 
 .bordered {
-    @include theme($color: $highlight);
+    @include theme($color);
+}
+.yellow {
+    @include theme($color: green);
+}
+.green {
+    @include theme($color: red);
 }
