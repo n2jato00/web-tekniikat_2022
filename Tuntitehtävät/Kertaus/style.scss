@@ -1,3 +1,18 @@
+//muuttuja $ merkillä
+$highlight:red;
+
+
+
+@mixin theme($color: blue){
+    color: $color;
+    border: 1px solid $highlight;
+    padding: 5px;
+    margin: 5px;
+}
 h1{
-    color: blue;
+    @include theme;
+}
+
+.bordered {
+    @include theme($color: $highlight);
 }
