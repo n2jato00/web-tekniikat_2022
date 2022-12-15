@@ -1,13 +1,18 @@
+$borderColor: #03465d;
+$backgroudColorBody: #056888;
+$backgroudColor: #98B5C0;
+
+
 body {
-    background-color: #056888;
+    background-color: $backgroudColorBody;
     margin: 0;
     font-family: 'Livvic', sans-serif;
     font-size: 1.2em;
     height: 98vh;
 }
 #navbar {
-    border: 4px solid #03465d;
-    background-color: #98B5C0;
+    border: 4px solid $borderColor;
+    background-color: $backgroudColor;
     font-weight: bold;
     margin-bottom: 5px ;
     a:hover {
@@ -65,8 +70,8 @@ p, a, footer{
 
 #footer {
     display: flex;
-    background-color: #98B5C0;
-    border: 5px solid #03465d;
+    background-color: $backgroudColor;
+    border: 5px solid $borderColor;
     width: 100%;
     margin: 0;
     justify-content: space-between;
@@ -99,8 +104,8 @@ footer img {
 }
 
 form {
-    border: 3px solid #03465d;
-    background-color: #98B5C0;
+    border: 3px solid $borderColor;
+    background-color: $backgroudColor;
     border-radius: 5px;
     padding: 5px;
 }
@@ -165,11 +170,11 @@ h2 {
 .scoreboard {
     display: flex;
     font-size: 1em;
-    border: 3px solid #03465d;
+    border: 3px solid $borderColor;
     border-radius: 5px;
     grid-column: 1/2;
     grid-row: 7/8;
-    background-color: #98B5C0;
+    background-color: $backgroudColor;
     justify-content: center;
     align-items: center;
     margin-bottom: 5px;
@@ -178,8 +183,8 @@ h2 {
 .side{
     grid-column: 1/2;
     grid-row: 1/2;
-    border: 3px solid #03465d;
-    background-color: #98B5C0;
+    border: 3px solid $borderColor;
+    background-color: $backgroudColor;
     text-align: center;
     padding: 10px;
     
