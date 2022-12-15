@@ -14,6 +14,10 @@ body {
   color: #056888;
 }
 
+a[href*=html] {
+  font-size: 1.5em;
+}
+
 .container-fluid {
   display: flex;
   flex-direction: row;

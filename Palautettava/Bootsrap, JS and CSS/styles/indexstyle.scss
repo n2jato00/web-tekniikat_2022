@@ -16,6 +16,11 @@ body {
     }
 }
 
+//using [] selector
+a[href*="html"] {
+    font-size: 1.5em;
+  }
+
 .container-fluid {
     display: flex;
     flex-direction: row;
