@@ -73,11 +73,16 @@ p, a, footer {
   align-items: flex-end;
 }
 
+.footer-item ~ li {
+  color: red;
+  font-size: 1em;
+}
+
 li.footer-item {
   padding: 3px;
 }
 
-footer img {
+footer > img {
   max-height: 100px;
   background-color: white;
 }
@@ -94,6 +99,10 @@ footer img {
   margin: 5px 0px;
 }
 
+.jotain + div {
+  background-color: aqua;
+}
+
 /* first content index */
 .container {
   display: flex;
@@ -104,6 +113,7 @@ footer img {
 
 .btn {
   margin-left: 40px;
+  background-color: #DA4F00;
 }
 
 .col-2 {
@@ -111,14 +121,16 @@ footer img {
   grid-column: 1/2;
   flex-direction: column;
   justify-content: flex-start;
-  align-content: center;
+  align-items: center;
 }
 
 .col-10 {
   display: flex;
+  grid-column: 2/3;
   flex-direction: column;
   justify-content: flex-start;
   align-content: center;
+  padding-left: 10px;
 }
 
 h3 {
