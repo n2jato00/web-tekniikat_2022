@@ -1,4 +1,5 @@
-
+$borderColor: #DA4F00;
+$backgroudColor: #FF995F;
 body {
     margin: 0;
     font-family: 'Livvic', sans-serif;
@@ -7,8 +8,8 @@ body {
 }
 
 #navbar {
-    border: 5px solid #DA4F00;
-    background-color: #FF995F;
+    border: 5px solid $borderColor;
+    background-color: $backgroudColor;
     font-weight: bold;
     a:hover {
         color: #056888;
@@ -62,8 +63,8 @@ p, a, footer{
 
 #footer {
     display: flex;
-    background-color: #FF995F;
-    border: 5px solid #DA4F00;
+    background-color: $backgroudColor;
+    border: 5px solid $borderColor;
     width: 100%;
     margin: 0;
     justify-content: space-between;
