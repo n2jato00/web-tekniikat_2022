@@ -15,7 +15,7 @@ body {
 }
 
 a[href*=html] {
-  font-size: 1.5em;
+  color: #056888;
 }
 
 .container-fluid {
@@ -120,12 +120,22 @@ footer > img {
   background-color: #DA4F00;
 }
 
+.firstPage {
+  display: grid;
+  grid-template-columns: 3fr 10fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+  border: 5px solid #DA4F00;
+  padding: 10px;
+  min-height: 410px;
+}
+
 .col-2 {
   display: flex;
   grid-column: 1/2;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-content: center;
 }
 
 .col-10 {
@@ -134,7 +144,6 @@ footer > img {
   flex-direction: column;
   justify-content: flex-start;
   align-content: center;
-  padding-left: 10px;
 }
 
 h3 {

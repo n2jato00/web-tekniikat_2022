@@ -54,10 +54,6 @@ let button1 = document.querySelector(".btn-primary");
 
 button1.addEventListener("click", changeColor);
 
-function changeColor(){
-    document.querySelector(".navbar").style.backgroundColor = "red"
-
-}
 
 
 
