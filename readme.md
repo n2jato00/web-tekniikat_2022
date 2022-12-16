@@ -5,3 +5,4 @@ EDITS:<br>
 7.12.2022 Object literals, JSON and lightbox example. <br>
 8.12.2022 SASS. <br>
 13.12.2022 Start returnable assignments. <br>
+16.12.2022 Finish returnable assignments.
