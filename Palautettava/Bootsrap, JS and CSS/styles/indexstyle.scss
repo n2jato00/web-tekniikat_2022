@@ -105,10 +105,12 @@ footer > img {
 
 .jotain {
     margin: 5px 0px;
+    color: #04475d;
 }
 //using + selector
 .jotain + div{
-    background-color: aqua;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1em;
 }
 /* first content index */
 .container {
